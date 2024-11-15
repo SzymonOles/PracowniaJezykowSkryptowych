@@ -15,6 +15,7 @@ print_board() {
 
 check_winner() {
     for i in 0 1 2; do
+    
         # rows
         if [[ ${board[$((i * 3))]} != "." &&
             ${board[$((i * 3))]} == ${board[$((i * 3 + 1))]} &&
@@ -23,6 +24,7 @@ check_winner() {
             print_board
             exit
         fi
+        
         # cols
         if [[ ${board[$i]} != "." &&
             ${board[$i]} == ${board[$((i + 3))]} &&
@@ -32,7 +34,7 @@ check_winner() {
             exit
         fi
     done
-
+    
     # diags
     if [[ ${board[0]} != "." &&
         ${board[0]} == ${board[4]} &&
@@ -48,14 +50,14 @@ check_winner() {
         print_board
         exit
     fi
-
+    
     # not draw
     for element in "${board[@]}"; do
         if [[ "$element" == "." ]]; then
             return
         fi
     done
-
+    
     # draw
     echo "It's a draw!"
     print_board
@@ -93,7 +95,6 @@ player_move() {
         if [[ $move -ge 0 &&
             $move -lt 9 &&
             ${board[$move]} == "." ]]; then
-
             board[$move]=$current_player
             break
         else
@@ -115,7 +116,6 @@ computer_move() {
 
 load_attempt() {
     while true; do
-
         read -p "would you like to load the game? (y/n):" doload
         if [[ "$doload" == "y" ]]; then
             load_game
@@ -125,60 +125,42 @@ load_attempt() {
         else
             echo "Invalid choice. Try again."
         fi
-
     done
 }
 
 swap_player() {
-
     if [[ $current_player == "X" ]]; then
         current_player="O"
     else
         current_player="X"
     fi
-
 }
 
 vs_computer() {
-
     load_attempt
-
     while true; do
-
         print_board
-
         if [[ $current_player == "X" ]]; then
             player_move
         else
             computer_move
         fi
-
         check_winner
-
         swap_player
-
     done
 }
 
 vs_player() {
-
     load_attempt
-
     while true; do
-
         print_board
-
         player_move
-
         check_winner
-
         swap_player
-
     done
 }
 
 read -p "choose mode: (1)player vs player (2)player vs computer:" mode
-
 if [[ "$mode" == "1" ]]; then
     vs_player
 elif [[ "$mode" == "2" ]]; then
