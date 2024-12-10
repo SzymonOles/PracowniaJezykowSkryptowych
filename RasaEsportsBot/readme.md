@@ -1,5 +1,6 @@
-link to video presentation: https://drive.google.com/file/d/1YAPIoK3sQGOzoSMxqd4rkPl8W30eKr68/view?usp=sharing
+link do wideoprezentacji: https://drive.google.com/file/d/1YAPIoK3sQGOzoSMxqd4rkPl8W30eKr68/view?usp=sharing
 
+note - w prezentacji jako reply do wyświetlenia informacji o turnieju mam ten sam reply co do dodawania zawodnika - zauważyłem po nagraniu, zmieniłem na lepszy
 
 
 ####WYMAGANIA####
