@@ -14,7 +14,7 @@ intents:
 
 responses:
   utter_ask_tournament_id:
-  - text: "Which tournament would you like to add a player to? Please provide the ID."
+  - text: "Please provide the ID of the tournament."
 
   utter_ask_player_name:
   - text: "What's the name of the player you want to add?"
