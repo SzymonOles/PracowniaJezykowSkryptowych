@@ -22,6 +22,7 @@ Należy wykonać odpowiednio na ocenę poszczególne zadania (wyższa ocena wyma
 
 CMD1:
 rasa train
+
 rasa run actions
 
 CMD2:
@@ -32,4 +33,5 @@ ngrok
 
 CONFIG:
 api.slack ->  Event Subscriptions
+
 paste ngrok url/webhooks/slack/webhook
