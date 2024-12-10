@@ -11,7 +11,9 @@ Należy wykonać odpowiednio na ocenę poszczególne zadania (wyższa ocena wyma
 4.5 Potwierdza dodanie zawodnika wraz z numerem oraz szczegółami turnieju
 5.0 Wywietlenie wszystkich drużyn, stanu rozgrywki oraz wszystkich zawodników w rozgrywce
 
-#####START########
+#####START#######
+
+
 CMD1:
 rasa train
 rasa run actions
