@@ -5,11 +5,11 @@ link to video presentation: https://drive.google.com/file/d/1YAPIoK3sQGOzoSMxqd4
 ####WYMAGANIA####
 
 Należy wykonać odpowiednio na ocenę poszczególne zadania (wyższa ocena wymaga wykonania wszystkich poprzednich):
-<!-- 3.0 Ma zaimplementowane minimum 3 ścieżki (stories) -->
-<!-- 3.5 Wyświetla listę dostępnych rozgrywek -->
-<!-- 4.0 Dodaje zawodnika do rozgrywki -->
-<!-- 4.5 Potwierdza dodanie zawodnika wraz z numerem oraz szczegółami turnieju -->
-<!-- 5.0 Wywietlenie wszystkich drużyn, stanu rozgrywki oraz wszystkich zawodników w rozgrywce -->
+3.0 Ma zaimplementowane minimum 3 ścieżki (stories)
+3.5 Wyświetla listę dostępnych rozgrywek
+4.0 Dodaje zawodnika do rozgrywki
+4.5 Potwierdza dodanie zawodnika wraz z numerem oraz szczegółami turnieju
+5.0 Wywietlenie wszystkich drużyn, stanu rozgrywki oraz wszystkich zawodników w rozgrywce
 
 #####START########
 CMD1:
