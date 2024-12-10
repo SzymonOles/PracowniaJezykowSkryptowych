@@ -1,0 +1,46 @@
+version: "3.1"
+
+stories:
+
+- story: show tournaments
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: show_tournaments
+  - action: action_show_tournaments
+
+- story: add player to tournament
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: add_player_to_tournament
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+      - requested_slot: tournament_id
+  - slot_was_set:
+      - tournament_id: 1
+  - slot_was_set:
+      - requested_slot: player_name
+  - slot_was_set:
+      - player_name: "John Doe"
+  - slot_was_set:
+      - requested_slot: null
+  - active_loop: null
+  - action: action_add_player_to_tournament
+
+- story: show tournament with details
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: show_tournaments_details
+  - action: tournament_form
+  - active_loop: tournament_form
+  - slot_was_set:
+      - requested_slot: tournament_id
+  - slot_was_set:
+      - tournament_id: 1
+  - slot_was_set:
+      - requested_slot: null
+  - active_loop: null
+  - action: action_show_tournament_details

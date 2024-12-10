@@ -1,0 +1,40 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Activate name form
+  steps:
+  - intent: add_player_to_tournament
+  - action: name_form
+  - active_loop: name_form
+
+- rule: Submit name form
+  condition:
+  - active_loop: name_form
+  steps:
+  - action: name_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_add_player_to_tournament
+
+- rule: Activate tournament form
+  steps:
+  - intent: show_tournaments_details
+  - action: tournament_form
+  - active_loop: tournament_form
+
+- rule: Submit tournament form
+  condition:
+  - active_loop: tournament_form
+  steps:
+  - action: tournament_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_show_tournament_details

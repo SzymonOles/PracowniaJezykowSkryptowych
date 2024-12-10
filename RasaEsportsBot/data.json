@@ -1,0 +1,33 @@
+{
+    "tournaments": [
+        {
+            "id": 1,
+            "name": "E-Sports Championship 2024",
+            "state": "finished",
+            "teams": [
+                "Team Alpha",
+                "Team Beta"
+            ],
+            "players": [
+                "Jan Kowalski",
+                "Anna Nowak",
+                "Adam Malysz",
+                "Roman",
+                "Zbych"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Pro League Finals",
+            "state": "upcoming",
+            "teams": [
+                "Team Gamma"
+            ],
+            "players": [
+                "Krzysztof Malinowski",
+                "Pasza",
+                "Kazio"
+            ]
+        }
+    ]
+}

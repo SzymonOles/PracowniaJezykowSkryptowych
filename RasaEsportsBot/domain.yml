@@ -1,0 +1,66 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - show_tournaments
+  - show_tournaments_details
+  - add_player_to_tournament
+
+responses:
+  utter_ask_tournament_id:
+  - text: "Which tournament would you like to add a player to? Please provide the ID."
+
+  utter_ask_player_name:
+  - text: "What's the name of the player you want to add?"
+
+  utter_greet:
+  - text: "Hey!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+actions:
+  - action_show_tournaments
+  - action_add_player_to_tournament
+  - action_show_tournament_details
+
+forms:
+  name_form:
+    required_slots:
+      - tournament_id
+      - player_name
+      
+  tournament_form:
+    required_slots:
+      - tournament_id
+
+
+slots:
+  tournament_id:
+    type: float
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: name_form
+            requested_slot: tournament_id
+          - active_loop: tournament_form
+            requested_slot: tournament_id
+  player_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+         - active_loop: name_form
+           requested_slot: player_name
+
+session_config:
+  session_expiration_time: 180
+  carry_over_slots_to_new_session: true
