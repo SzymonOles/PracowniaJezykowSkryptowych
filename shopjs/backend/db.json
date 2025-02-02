@@ -1,0 +1,190 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": 3500,
+      "category": "Elektronika"
+    },
+    {
+      "id": 2,
+      "name": "Smartfon",
+      "price": 2500,
+      "category": "Elektronika"
+    },
+    {
+      "id": 3,
+      "name": "Tablet",
+      "price": 1500,
+      "category": "Elektronika"
+    },
+    {
+      "id": 4,
+      "name": "Książka",
+      "price": 50,
+      "category": "Książki"
+    },
+    {
+      "id": 5,
+      "name": "Ebook",
+      "price": 30,
+      "category": "Książki"
+    },
+    {
+      "id": 6,
+      "name": "Komiks",
+      "price": 40,
+      "category": "Książki"
+    },
+    {
+      "id": 7,
+      "name": "Krzesło",
+      "price": 200,
+      "category": "Meble"
+    },
+    {
+      "id": 8,
+      "name": "Stół",
+      "price": 500,
+      "category": "Meble"
+    },
+    {
+      "id": 9,
+      "name": "Sofa",
+      "price": 1500,
+      "category": "Meble"
+    },
+    {
+      "id": 10,
+      "name": "Buty sportowe",
+      "price": 300,
+      "category": "Odzież"
+    },
+    {
+      "id": 11,
+      "name": "Kurtka zimowa",
+      "price": 600,
+      "category": "Odzież"
+    },
+    {
+      "id": 12,
+      "name": "Koszulka",
+      "price": 100,
+      "category": "Odzież"
+    },
+    {
+      "id": 13,
+      "name": "Blender",
+      "price": 250,
+      "category": "AGD"
+    },
+    {
+      "id": 14,
+      "name": "Odkurzacz",
+      "price": 800,
+      "category": "AGD"
+    },
+    {
+      "id": 15,
+      "name": "Lodówka",
+      "price": 2000,
+      "category": "AGD"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Elektronika"
+    },
+    {
+      "id": 2,
+      "name": "Książki"
+    },
+    {
+      "id": 3,
+      "name": "Meble"
+    },
+    {
+      "id": 4,
+      "name": "Odzież"
+    },
+    {
+      "id": 5,
+      "name": "AGD"
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1738512787461,
+      "products": [
+        {
+          "id": 1,
+          "name": "Laptop",
+          "price": 3500,
+          "category": "Elektronika"
+        },
+        {
+          "id": 3,
+          "name": "Tablet",
+          "price": 1500,
+          "category": "Elektronika"
+        },
+        {
+          "id": 5,
+          "name": "Ebook",
+          "price": 30,
+          "category": "Książki"
+        },
+        {
+          "id": 5,
+          "name": "Ebook",
+          "price": 30,
+          "category": "Książki"
+        }
+      ],
+      "total": 5060
+    },
+    {
+      "id": 1738512807771,
+      "products": [
+        {
+          "id": 7,
+          "name": "Krzesło",
+          "price": 200,
+          "category": "Meble"
+        },
+        {
+          "id": 7,
+          "name": "Krzesło",
+          "price": 200,
+          "category": "Meble"
+        },
+        {
+          "id": 7,
+          "name": "Krzesło",
+          "price": 200,
+          "category": "Meble"
+        },
+        {
+          "id": 7,
+          "name": "Krzesło",
+          "price": 200,
+          "category": "Meble"
+        },
+        {
+          "id": 8,
+          "name": "Stół",
+          "price": 500,
+          "category": "Meble"
+        },
+        {
+          "id": 13,
+          "name": "Blender",
+          "price": 250,
+          "category": "AGD"
+        }
+      ],
+      "total": 1550
+    }
+  ]
+}
