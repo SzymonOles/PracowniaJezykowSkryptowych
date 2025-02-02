@@ -1,0 +1,34 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bigdecimal (3.1.9)
+    date (3.4.1)
+    fiddle (1.1.6)
+    nokogiri (1.18.2-x64-mingw-ucrt)
+      racc (~> 1.4)
+    open-uri (0.5.0)
+      stringio
+      time
+      uri
+    racc (1.8.1)
+    sequel (5.89.0)
+      bigdecimal
+    sqlite3 (2.5.0-x64-mingw-ucrt)
+    stringio (3.1.2)
+    time (0.4.1)
+      date
+    uri (1.0.2)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  fiddle
+  nokogiri
+  open-uri
+  sequel
+  sqlite3
+  uri
+
+BUNDLED WITH
+   2.6.2
